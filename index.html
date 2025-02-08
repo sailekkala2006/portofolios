@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+<style>
+    #header1{
+        background-color:blue;
+        display:flex;
+        justify-content:flex-end;
+        height:45px;
+        padding-top: 20px;
+       
+       
+    }
+    a{
+        width:150px;
+        color:white;
+        text-transform: capitalize;
+        font-size: 16px;
+        text-decoration: none;
+        padding-top:5px;
+        text-align:center;
+        
+        
+    }
+    a:hover{
+        background-color: white;
+        color:black;
+        height: 25px;
+        border-radius: 40px;
+      
+
+    }
+#increase{
+    width:200px;
+}
+#menu{
+    display: none;
+}
+#main{
+    border: solid 2px black;
+    height:350px;
+   margin-top: 10px;
+  background-image: url("https://www.newgenapps.com/hubfs/Imported_Blog_Media/Website-Design-Background-Aug-21-2023-04-28-29-3461-PM.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+
+@media only screen and (max-width:600px){
+a{
+    text-align: center;
+    margin: auto;
+}   
+#header1{
+    background-color: blue;
+    flex-direction:column ;
+    height:150px;
+    width:100%;
+    display:none;
+}
+#menu{
+    display: block;
+}
+#main{
+    padding: 10px;
+    margin:10px;
+}
+}
+
+b{
+    color:white;
+    text-transform: capitalize;
+    
+}
+h1{
+    color:white;
+    text-transform: capitalize;
+}
+#main{
+   padding-top: 150px;
+   padding-left: 50px;;
+}
+@media only screen and (max-width:370px){
+a{
+    text-align: center;
+    margin: auto;
+}   
+#header1{
+    background-color: blue;
+    flex-direction:column ;
+    height:150px;
+    width:100%;
+    display:none;
+}
+#menu{
+    display: block;
+}
+#main{
+    padding: 10px;
+    margin:10px;
+}
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="body">
+  <div id="header">
+    <div id="menu">
+      <div id="sa" class="fa fa-bars" style="font-size:48px;color:black" onclick="sam()"></div>
+    </div>
+        <div id="header1">
+            <a id="increase" href="#">my portfolio</a>
+            <a href="#">about</a>
+            <a href="#">skills</a>
+            <a href="#">projects</a>
+        </div>
+  </div>
+    <div id="main">
+       <div id="intro"><b>hello, i'am</b></div>
+       <div><h1>lekkala sai prasad reddy</h1></div> 
+    </div>
+</div>
+    <script>
+        function sam() {
+            const sai = document.querySelector('#header1');
+            sai.style.display = sai.style.display === 'flex' ? 'none' : 'flex';
+        }
+       </script>
+</body>
+</html>
